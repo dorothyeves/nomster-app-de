@@ -58,4 +58,4 @@ end
 
 gem 'bootstrap' , :git => 'https://github.com/twbs/bootstrap-rubygem.git', :ref => 'e1c74fd617119811e7cb12fd80502b5538f4462b'
 
-gem 'will_paginate', '>= 3.0'
+gem 'will_paginate', '~> 3.1.0'
