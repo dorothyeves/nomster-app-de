@@ -52,6 +52,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether','>= 1.3.3'
+end
+
 gem 'bootstrap' , :git => 'https://github.com/twbs/bootstrap-rubygem.git', :ref => 'e1c74fd617119811e7cb12fd80502b5538f4462b'
 
 gem 'will_paginate', '>= 3.0'
