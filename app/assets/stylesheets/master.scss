@@ -42,12 +42,13 @@ body {
 .pagination {
   background: white;
   cursor: default;
-  height: 22px;
+  height: 32px;
   a, span, em {
     padding: 0.2em 0.5em;
     display: block;
     float: left;
     margin-right: 1px;
+    margin-left: 6px;
   }
   .disabled {
     display: none;
