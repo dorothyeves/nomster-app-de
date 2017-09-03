@@ -1,6 +1,7 @@
 <% @places.each do |place| %>
+
 <div class="booyah-box col-10 offset-1">
-  <h1><%= place.name %></h1><br />
+  <h1><%= link_to place.name, place_path(place) %></h1><br />
   <i><%= place.address %></i><br /><br />
   <p><%= place.description %></p><br />
 
@@ -8,14 +9,17 @@
     <small><%= place.user.email %></small>
   <% end %>
 </div>
+
 <% end %>
+
+
 <br class="clear" />
 <div class="container">
 
-<div class="col-5 offset-1 pagination a pagination a ">
-<%= will_paginate @places %>
-</div>
+  <div class="col-5 offset-1 pagination a pagination a ">
+  <%= will_paginate @places %>
+  </div>
 </div>
 
 <br class="clear" />
-<br class="clear" />
+
