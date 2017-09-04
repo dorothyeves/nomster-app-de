@@ -68,3 +68,7 @@ gem 'font-awesome-rails'
 gem 'devise'
 
 gem 'pg_search'
+
+gem 'geocoder'
+
+gem 'figaro'
