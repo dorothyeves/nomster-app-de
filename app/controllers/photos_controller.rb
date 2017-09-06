@@ -3,7 +3,7 @@ before_action :authenticate_user!
   def create
     @place = Place.find(params[:place_id])
     @place.photos.create(photo_params)
-    redirect_to places_path(@place)
+    redirect_to place_path(@place)
   end
 
   private
