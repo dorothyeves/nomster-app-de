@@ -115,7 +115,7 @@
 
 <div class="clear"></div>
 
-<div class="row">
+<div class="container">
   <% @place.comments.each do |comment| %>
     <div class="col-6 col-sm-5 offset-1">
       <blockquote>
@@ -128,27 +128,26 @@
     </div>
   <% end %>
 </div>
-
-
+</div>
 
 <div class="clear"></div>
+<div class="clear"></div>
+<br class="clear" />
+<div class="col-12 offset-1">
+  <h1 class="float-left">Photos</h1>
+  <div class="clear"></div>
 
+<div class="container">
 
-
-<% if @place.photos.present? %>
-<div class="booyah-box col-10 offset-1">
-<h1>Photos</h1>
-  <div class="img">
- <% @place.photos.each do |photo| %>
-     
-          <%= image_tag photo.picture %>
-          <%= photo.caption %>
-        </div>
-        <br class="clear" />
+      <% @place.photos.each do |photo| %>
+      <div class="img img-responsive">
+      
+        <small><%= photo.caption %></small><br />
+        <%= image_tag photo.picture %>
+      
+    </div>
   <% end %>
 </div>
-<% end %>
-
 
 
 
