@@ -137,20 +137,24 @@
 
 <% if @place.photos.present? %>
 <div class="booyah-box col-10 offset-1">
+<h1>Photos</h1>
+  <div class="img">
  <% @place.photos.each do |photo| %>
      
           <%= image_tag photo.picture %>
           <%= photo.caption %>
+        </div>
+        <br class="clear" />
   <% end %>
 </div>
 <% end %>
 
 
 
+
+
 <!-- Button trigger modal-->
- <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
-    Add Photo
-  </button>
+
 
   <!-- Modal-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

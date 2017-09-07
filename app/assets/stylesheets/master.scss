@@ -13,6 +13,7 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+
 }
 
 h1, h2, h3, h4 ,h5 ,h6 {
@@ -120,4 +121,11 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+img {
+  background-size: cover;
+  overflow: hidden;
+  height: 30%;
+  width: 30%;
 }

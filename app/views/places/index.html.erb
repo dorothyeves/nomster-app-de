@@ -18,11 +18,31 @@
           <%= place.comments.last.message %>
         <small><%= place.comments.last.user.email %></small>
       </blockquote>
-    </div>
-<% end %>
+
+<% if place.photos.present? %>
+
+  <div class="img">
+ <% place.photos.each do |photo| %>
+           <%= photo.caption %><br/>
+          <%= image_tag photo.picture %>
+          
+        </div>
+        <br class="clear" />
+  <% end %>
 </div>
 <% end %>
 
+
+
+
+    </div>
+<% end %>
+  <% end %>
+
+
+
+
+  
 
 <br class="clear" />
 <div class="container">
